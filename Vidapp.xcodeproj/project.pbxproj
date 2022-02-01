@@ -13,6 +13,13 @@
 		507EDA4627A6276C00C455C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA3427A6276C00C455C6 /* ContentView.swift */; };
 		507EDA4727A6276C00C455C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507EDA3527A6276C00C455C6 /* Assets.xcassets */; };
 		507EDA4827A6276C00C455C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507EDA3527A6276C00C455C6 /* Assets.xcassets */; };
+		507EDA5327A9DDF700C455C6 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA5227A9DDF700C455C6 /* QueryTag.swift */; };
+		507EDA5727A9DEB800C455C6 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA5627A9DEB800C455C6 /* VideoManager.swift */; };
+		507EDA5927A9DF8000C455C6 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA5627A9DEB800C455C6 /* VideoManager.swift */; };
+		507EDA5B27A9E03200C455C6 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA5A27A9E03200C455C6 /* VideoCard.swift */; };
+		507EDA5D27A9E83200C455C6 /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 507EDA5C27A9E83200C455C6 /* videoData.json */; };
+		507EDA6127A9E88F00C455C6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA6027A9E88F00C455C6 /* ModelData.swift */; };
+		507EDA6327A9EA8000C455C6 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EDA6227A9EA8000C455C6 /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		507EDA3A27A6276C00C455C6 /* Vidapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vidapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507EDA4027A6276C00C455C6 /* Vidapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vidapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507EDA4227A6276C00C455C6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		507EDA5227A9DDF700C455C6 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
+		507EDA5627A9DEB800C455C6 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		507EDA5A27A9E03200C455C6 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		507EDA5C27A9E83200C455C6 /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = videoData.json; path = "../../../../../Downloads/VideoPlayerApp-main/VideoFinder/Preview Content/videoData.json"; sourceTree = "<group>"; };
+		507EDA5E27A9E84F00C455C6 /* videoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		507EDA6027A9E88F00C455C6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		507EDA6227A9EA8000C455C6 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +68,11 @@
 		507EDA3227A6276C00C455C6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				507EDA5627A9DEB800C455C6 /* VideoManager.swift */,
+				507EDA5127A9DDDE00C455C6 /* Components */,
+				507EDA5827A9DF4B00C455C6 /* Views */,
 				507EDA3327A6276C00C455C6 /* VidappApp.swift */,
-				507EDA3427A6276C00C455C6 /* ContentView.swift */,
-				507EDA3527A6276C00C455C6 /* Assets.xcassets */,
+				507EDA5F27A9E85300C455C6 /* Preview Content */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +92,35 @@
 				507EDA4227A6276C00C455C6 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		507EDA5127A9DDDE00C455C6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				507EDA5227A9DDF700C455C6 /* QueryTag.swift */,
+				507EDA5A27A9E03200C455C6 /* VideoCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		507EDA5827A9DF4B00C455C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				507EDA3427A6276C00C455C6 /* ContentView.swift */,
+				507EDA6227A9EA8000C455C6 /* VideoView.swift */,
+				507EDA5C27A9E83200C455C6 /* videoData.json */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		507EDA5F27A9E85300C455C6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				507EDA3527A6276C00C455C6 /* Assets.xcassets */,
+				507EDA5E27A9E84F00C455C6 /* videoData.json */,
+				507EDA6027A9E88F00C455C6 /* ModelData.swift */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				507EDA4727A6276C00C455C6 /* Assets.xcassets in Resources */,
+				507EDA5D27A9E83200C455C6 /* videoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				507EDA4527A6276C00C455C6 /* ContentView.swift in Sources */,
+				507EDA6327A9EA8000C455C6 /* VideoView.swift in Sources */,
+				507EDA5B27A9E03200C455C6 /* VideoCard.swift in Sources */,
+				507EDA5327A9DDF700C455C6 /* QueryTag.swift in Sources */,
 				507EDA4327A6276C00C455C6 /* VidappApp.swift in Sources */,
+				507EDA5727A9DEB800C455C6 /* VideoManager.swift in Sources */,
+				507EDA6127A9E88F00C455C6 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +238,7 @@
 			files = (
 				507EDA4627A6276C00C455C6 /* ContentView.swift in Sources */,
 				507EDA4427A6276C00C455C6 /* VidappApp.swift in Sources */,
+				507EDA5927A9DF8000C455C6 /* VideoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
